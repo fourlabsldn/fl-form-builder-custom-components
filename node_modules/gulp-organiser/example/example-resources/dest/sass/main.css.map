@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss"],"names":[],"mappings":"AAAA;EACE,2CAAgC,EACjC","file":"main.css","sourcesContent":["body {\n  background-color: transparentize(#fff, .5);\n}\n"],"sourceRoot":"/source/"}

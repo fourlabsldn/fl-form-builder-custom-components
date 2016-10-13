@@ -1,0 +1,1 @@
+{"version":3,"sources":["secondary.scss"],"names":[],"mappings":"AAAA;EACE,aAAiB,EAClB","file":"secondary.css","sourcesContent":["h1 {\n  color: desaturate(green, .1);\n}\n"],"sourceRoot":"/source/"}

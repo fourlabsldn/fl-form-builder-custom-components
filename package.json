@@ -1,0 +1,37 @@
+{
+  "name": "fl-form-builder-custom-dropdown",
+  "version": "1.0.0",
+  "description": "![badge](http://forthebadge.com/images/badges/reading-6th-grade-level.svg)",
+  "main": "gulpfile.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lazamar @ FourLabs",
+  "license": "ISC",
+  "keywords": [
+    "custom",
+    "component",
+    "fl-interactive-form",
+    "fl-form-builder"
+  ],
+  "devDependencies": {
+    "babel-preset-react": "^6.16.0",
+    "gulp": "^3.9.1",
+    "gulp-flatmap": "^1.0.0",
+    "gulp-organiser": "^1.0.6",
+    "gulp-sourcemaps": "^1.7.3",
+    "gulp-uglify": "^2.0.0",
+    "lodash": "^4.16.4",
+    "path": "^0.12.7",
+    "rollup-plugin-babel": "^2.6.1",
+    "rollup-plugin-commonjs": "^5.0.5",
+    "rollup-plugin-node-resolve": "^2.0.0",
+    "rollup-plugin-replace": "^1.1.1",
+    "rollup-stream": "^1.14.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

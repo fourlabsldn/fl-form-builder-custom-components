@@ -1,0 +1,716 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for require-dir-all/lib/index.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">all files</a> / <a href="index.html">require-dir-all/lib/</a> index.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">17.54% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>10/57</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/46</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">17.54% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>10/57</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// See README.md for details.
+&nbsp;
+// Inspired by require-all and require-dir packages:
+// https://github.com/felixge/node-require-all
+// https://github.com/aseemk/requireDir
+&nbsp;
+'use strict';
+&nbsp;
+var fs = require('fs'),
+    path = require('path');
+&nbsp;
+// Replacement for Object.assign() for node 0.10-0.12
+var object_assign = require('./assign');
+&nbsp;
+// Trick taken from https://github.com/aseemk/requireDir/blob/master/index.js
+//
+// make a note of the calling file's path, so that we can resolve relative
+// paths. this only works if a fresh version of this module is run on every
+// require(), so important: we clear the require() cache each time!
+delete require.cache[__filename];
+//
+&nbsp;
+var parentModule = module.parent;
+var parentFile   = parentModule.filename;
+var parentDir    = path.dirname(parentFile);
+&nbsp;
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+&nbsp;
+/**
+ * Require Module definition (passed to map function)
+ *
+ * @typedef {object} RequireModule
+ * @property {string} filename     - filename with extension, without path
+ * @property {string} ext          - file extension
+ * @property {string} base         - filename without extension
+ * @property {string} filepath     - full file path
+ * @property {string} name         - module name
+ * @property {{}} exports          - module's exports
+ */
+&nbsp;
+/**
+ * Map function
+ *
+ * @callback RequireMap
+ * @param {RequireModule} requireModule
+ */
+&nbsp;
+/**
+ * Options for require-dir-all
+ *
+ * @typedef {object} RequireOptions
+ * @property {boolean} [recursive=false]     - go recursively into subdirectories
+ * @property {boolean} [indexAsParent=false] - exports of 'index' files will be added
+ *                                     directly to object corresponding to the
+ *                                     directory with this 'index' file, not to
+ *                                     its child object named 'index'
+ *                                     (as by default)
+ * @property {RegExp} [excludeDirs]    - RegExp to exclude directories
+ * @property {RegExp} [includeFiles]   - RegExp to include files
+ * @property {RequireMap} [map]        - map function to be called for each require'd module
+ */
+&nbsp;
+/**
+ * Check if the module to be excluded
+ *
+ * @param {RequireModule} reqModule
+ * @param {RegExp} reIncludeFiles
+ * @returns {boolean}
+ */
+<span class="fstat-no" title="function not covered" >function isExcludedFile(reqModule, reIncludeFiles) {</span>
+<span class="cstat-no" title="statement not covered" >  return !! ( (reqModule.filepath === parentFile) ||   // Exclude require'ing file</span>
+  (reIncludeFiles &amp;&amp; !reqModule.filename.match(reIncludeFiles)) ); // Exclude files non-matched to pattern includeFiles
+}
+&nbsp;
+&nbsp;
+/**
+ * Check if the directory to be excluded
+ *
+ * @param {RequireModule} reqModule
+ * @param {RegExp} reExcludeDirs
+ * @returns {boolean}
+ */
+<span class="fstat-no" title="function not covered" >function isExcludedDir(reqModule, reExcludeDirs) {</span>
+<span class="cstat-no" title="statement not covered" >  return  !! ( reExcludeDirs &amp;&amp; reqModule.filename.match(reExcludeDirs) );</span>
+}
+&nbsp;
+&nbsp;
+/**
+ * Main function. Recursively go through directories and require modules according to options
+ *
+ * @param   {string}  absDir
+ * @param   {RequireOptions} options
+ * @returns {object}
+ * @private
+ */
+<span class="fstat-no" title="function not covered" >function _requireDirAll(absDir, options) {</span>
+<span class="cstat-no" title="statement not covered" >  var modules = {};</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  var files = fs.readdirSync(absDir);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  for (var length=files.length, i=0; i&lt;length; ++i) {</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    var reqModule = {};</span>
+<span class="cstat-no" title="statement not covered" >    reqModule.filename = files[i]; </span>                                        // full filename without path
+<span class="cstat-no" title="statement not covered" >    reqModule.ext      = path.extname(reqModule.filename); </span>                // file extension
+<span class="cstat-no" title="statement not covered" >    reqModule.base     = path.basename(reqModule.filename, reqModule.ext); </span>// filename without extension
+<span class="cstat-no" title="statement not covered" >    reqModule.filepath = path.join(absDir, reqModule.filename); </span>           // full filename with absolute path
+&nbsp;
+    //console.log('reqModule:', reqModule);
+&nbsp;
+    // If this is subdirectory, then descend recursively into it (excluding matching patter excludeDirs)
+<span class="cstat-no" title="statement not covered" >    if (fs.statSync(reqModule.filepath).isDirectory() &amp;&amp;</span>
+      options.recursive &amp;&amp;
+      ! isExcludedDir(reqModule, options.excludeDirs) ) {
+&nbsp;
+      // use filename (with extension) instead of base name (without extension)
+      // to keep complete directory name for directories with '.', like 'dir.1.2.3'
+<span class="cstat-no" title="statement not covered" >      reqModule.name = reqModule.filename;</span>
+&nbsp;
+      // go recursively into subdirectory
+      //if (typeof modules === 'undefined') {
+      //  modules = {};
+      //}
+<span class="cstat-no" title="statement not covered" >      modules[reqModule.name] = _requireDirAll(reqModule.filepath, options);</span>
+&nbsp;
+    } else <span class="cstat-no" title="statement not covered" >if ( ! isExcludedFile(reqModule, options.includeFiles)) {</span>
+<span class="cstat-no" title="statement not covered" >      reqModule.name    = reqModule.base;</span>
+<span class="cstat-no" title="statement not covered" >      reqModule.exports = require(reqModule.filepath);</span>
+<span class="cstat-no" title="statement not covered" >      if (options.map) {</span>
+<span class="cstat-no" title="statement not covered" >        options.map(reqModule);</span>
+      }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      var source = reqModule.exports;</span>
+<span class="cstat-no" title="statement not covered" >      var target = (reqModule.name === 'index' &amp;&amp; options.indexAsParent) ? modules : modules &amp;&amp;  modules[ reqModule.name ];</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      var sourceIsObject = (typeof source === 'object');</span>
+<span class="cstat-no" title="statement not covered" >      var targetIsObject = (typeof target === 'object');</span>
+      //var targetUnassigned = (typeof target === 'undefined');
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      if (sourceIsObject &amp;&amp; targetIsObject) {</span>
+<span class="cstat-no" title="statement not covered" >        if (Object.assign) {</span>
+<span class="cstat-no" title="statement not covered" >          Object.assign(target, source);</span>
+        } else {
+<span class="cstat-no" title="statement not covered" >          object_assign(target, source);</span>
+        }
+      } else //if (
+      //(!sourceIsObject &amp;&amp; !targetIsObject) || // if source and target both are not objects  or...
+      //(targetUnassigned)   // if target is not yet assigned, we may assign any type to it
+      //)
+      {
+<span class="cstat-no" title="statement not covered" >        target = source;</span>
+        //} else {
+        //  console.log('!!!! ' +
+        //    '  source:', source,
+        //    '  target:', target,
+        //    '; sourceIsObject:', sourceIsObject,
+        //    '; targetIsObject:', targetIsObject,
+        //    '; targetUnassigned:', targetUnassigned,
+        //    '');
+        //  throw 'Not possible to mix objects with scalar or array values: ' +
+        //  'filepath: '+ reqModule.filepath + '; ' +
+        //  'modules: '+ JSON.stringify(modules) + '; ' +
+        //  'exports: '+ JSON.stringify(reqModule.exports)
+        //    ;
+      }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      if (reqModule.name === 'index' &amp;&amp; options.indexAsParent) {</span>
+<span class="cstat-no" title="statement not covered" >        modules = target;</span>
+      } else {
+        //if (typeof modules === 'undefined') {
+        //  modules = {};
+        //}
+<span class="cstat-no" title="statement not covered" >        modules[ reqModule.name ] = target;</span>
+      }
+    }
+&nbsp;
+  }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  return modules;</span>
+}
+&nbsp;
+&nbsp;
+/**
+ * Main entry point. Analyse input parameters and invoke main function _requireDirAll()
+ *
+ * @param { string||string[] } [relOrAbsDir]  - Directory or array of directories to 'require'
+ * @param {RequireOptions} [options]          - Set of options
+ * @returns {object || object[]}              - Returns object with require'd modules or array of such objects
+ * @public
+ */
+module.exports = <span class="fstat-no" title="function not covered" >function requireDirAll(relOrAbsDir, options) {</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  relOrAbsDir = relOrAbsDir || '.';</span>
+<span class="cstat-no" title="statement not covered" >  options = options || {};</span>
+<span class="cstat-no" title="statement not covered" >  options.recursive     = options.recursive     || false;</span>
+<span class="cstat-no" title="statement not covered" >  options.indexAsParent = options.indexAsParent || false;</span>
+<span class="cstat-no" title="statement not covered" >  options.includeFiles  = options.includeFiles  || /^.*\.(js|json|coffee)$/;</span>
+<span class="cstat-no" title="statement not covered" >  options.excludeDirs   = options.excludeDirs   || /^(\.git|\.svn|node_modules)$/;</span>
+<span class="cstat-no" title="statement not covered" >  options.map           = options.map           || null;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  var absDir;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  if (typeof relOrAbsDir === 'string') {</span>
+<span class="cstat-no" title="statement not covered" >    absDir = path.resolve(parentDir, relOrAbsDir);</span>
+    //console.log('relOrAbsDir:', relOrAbsDir, '; options:', options);
+<span class="cstat-no" title="statement not covered" >    return _requireDirAll(absDir, options);</span>
+&nbsp;
+  } else { // Assume it is array
+<span class="cstat-no" title="statement not covered" >    var modulesArray = [];</span>
+<span class="cstat-no" title="statement not covered" >    for (var length=relOrAbsDir.length, i=0; i&lt;length; ++i) {</span>
+      //console.log('relOrAbsDir:', relOrAbsDir, '; options:', options);
+<span class="cstat-no" title="statement not covered" >      absDir = path.resolve(parentDir, relOrAbsDir[i]);</span>
+<span class="cstat-no" title="statement not covered" >      modulesArray.push(_requireDirAll(absDir, options));</span>
+    }
+<span class="cstat-no" title="statement not covered" >    return modulesArray;</span>
+  }
+};
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Jan 22 2016 17:43:41 GMT+0300 (MSK)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>
