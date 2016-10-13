@@ -1,4 +1,4 @@
-# fl-form-builder-custom-dropdown
+# fl-form-builder-custom-components
 
 ![badge](http://forthebadge.com/images/badges/reading-6th-grade-level.svg)
 
@@ -10,7 +10,7 @@ Uh, what a name. Basically, this allows you to build custom dropdowns for [`fl-f
 Lo and behold:
 
 ``` javascript
-import customDropdown from 'fl-form-builder-custom-dropdown';
+import customDropdown from 'fl-form-builder-custom-components';
 import moment from 'moment';
 
 const typeInfo = {

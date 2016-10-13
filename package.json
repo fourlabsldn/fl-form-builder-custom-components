@@ -18,7 +18,9 @@
     "fl-form-builder"
   ],
   "devDependencies": {
+    "babel-preset-es2017": "^6.16.0",
     "babel-preset-react": "^6.16.0",
+    "dep-linker": "^1.0.24",
     "gulp": "^3.9.1",
     "gulp-flatmap": "^1.0.0",
     "gulp-organiser": "^1.0.6",
@@ -33,5 +35,8 @@
     "rollup-stream": "^1.14.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "fl-form-builder": "git+https://github.com/fourlabsldn/fl-form-builder.git"
   }
 }
