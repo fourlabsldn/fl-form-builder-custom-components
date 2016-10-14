@@ -37,6 +37,7 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
-    "fl-form-builder": "git+https://github.com/fourlabsldn/fl-form-builder.git"
+    "fl-form-builder": "git+https://github.com/fourlabsldn/fl-form-builder.git",
+    "fl-interactive-form": "git+https://github.com/fourlabsldn/fl-interactive-form.git"
   }
 }

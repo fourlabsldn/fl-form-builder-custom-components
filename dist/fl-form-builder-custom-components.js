@@ -68,7 +68,11 @@ function customDropdown(userTypeInfo) {
   return CustomDropdown;
 }
 
-return customDropdown;
+var flFormBuilderCustomComponents = {
+  customDropdown
+};
+
+return flFormBuilderCustomComponents;
 
 });
 

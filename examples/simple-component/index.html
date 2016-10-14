@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple component</title>
+
+  <!-- FORM BUILDER AND DEPENDENCIES -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> </script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../dependencies/fl-form-builder/dist/fl-form-builder.css">
+
+
+  <!-- INTERACTIVE FORM AND DEPENDENCIES -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.2/require.min.js"></script>
+
+  <script>
+    requirejs.config({
+      paths: {
+        // dependencies
+        'react': 'http://cdnjs.cloudflare.com/ajax/libs/react/15.3.2/react.min',
+        'react-dom': 'https://cdnjs.cloudflare.com/ajax/libs/react/15.3.2/react-dom.min',
+        'moment': 'https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min',
+
+        // our modules
+        'fl-interactive-form': '../dependencies/fl-interactive-form/dist/react-main',
+        'fl-form-builder': '../dependencies/fl-form-builder/dist/fl-form-builder',
+        'fl-form-builder-custom-components': '../../dist/fl-form-builder-custom-components',
+      },
+    });
+  </script>
+</head>
+<body>
+
+  <h1>Form Builder</h1>
+  <div id="form-builder-container"></div>
+
+  <h1>Interactive form</h1>
+  <div id="interactive-form-container"></div>
+
+
+  <!-- CREATE THE CUSTOM ELEMENT -->
+  <script>
+    require([
+        'fl-interactive-form',
+        'fl-form-builder',
+        'fl-form-builder-custom-components',
+        'moment',
+      ],
+      function (interactiveForm, formBuilder, customComponents, moment) {
+
+        // ==================== CREATE COMPONENT ========================
+        const myCustomTypeInfo = {
+          // All keys are Compulsory
+          type: 'ThreeMonthsSelector',
+          displayName: 'Next Three Months Selector',
+          group: 'Custom Components',
+          required: false,
+          title: 'Choose a month',
+          options: [
+            moment().add(0, 'month').format('MMMM'),
+            moment().add(1, 'month').format('MMMM'),
+            moment().add(2, 'month').format('MMMM'),
+          ],
+        };
+
+
+        const ThreeMonthsSelector = customComponents.customDropdown(myCustomTypeInfo);
+
+        // ==================== START FORM-BUILDER ========================
+        const formBuilderContainer = document.querySelector('#form-builder-container');
+        new formBuilder(formBuilderContainer, [ThreeMonthsSelector]);
+
+
+        // ==================== START INTERACTIVE-FORM ========================
+        const form = interactiveForm.create(config);
+        document.querySelector('#interactive-form-container').appendChild(form);
+      }
+    )
+  </script>
+</body>
+</html>
