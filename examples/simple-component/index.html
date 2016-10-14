@@ -13,7 +13,9 @@
 
   <!-- INTERACTIVE FORM AND DEPENDENCIES -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../dependencies/fl-interactive-form/dist/main.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.2/require.min.js"></script>
+
 
   <script>
     requirejs.config({
@@ -30,6 +32,18 @@
       },
     });
   </script>
+
+  <style>
+  body {
+    padding: 0 20%;
+  }
+
+  #form-builder-container,
+  #interactive-form-container {
+    height: 350px;
+  }
+
+  </style>
 </head>
 <body>
 
@@ -74,6 +88,7 @@
 
 
         // ==================== START INTERACTIVE-FORM ========================
+        const config = [ ThreeMonthsSelector.initialState() ];
         const form = interactiveForm.create(config);
         document.querySelector('#interactive-form-container').appendChild(form);
       }
